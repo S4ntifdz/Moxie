@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'api',
     'appointments',
     'medspas',
-    'services',
+    'service_management',
 ]
 
 MIDDLEWARE = [

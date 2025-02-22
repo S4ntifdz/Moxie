@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from medspas.models import MedspaModel
+
+
+@admin.register(MedspaModel)
+class MedspaAdmin(admin.ModelAdmin):
+    list_display = ['name',]

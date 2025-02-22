@@ -9,8 +9,6 @@ class MedspaModel(models.Model):
     phone_number = models.CharField(max_length=256, null=False, blank=False)
     email_address = models.CharField(max_length=256, null=False, blank=False)
 
-
-
     class Meta:
             verbose_name = "Medspa"
             verbose_name_plural = "Medspas"
