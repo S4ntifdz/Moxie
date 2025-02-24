@@ -9,6 +9,6 @@ class ProductPagination(PageNumberPagination):
     max_page_size = 100
 
 class ProductView(viewsets.ModelViewSet):
-    queryset = ProductModel.objects.all()
+    queryset = ProductModel.objects.all().order_by('id')
     serializer_class = ProductSerializer
     pagination_class = ProductPagination

@@ -9,7 +9,6 @@ class ServiceModel(models.Model):
     description = models.TextField(blank=True, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
     duration = models.IntegerField(blank=True, null=True,)
-    
     medspa = models.ForeignKey(MedspaModel, on_delete=models.CASCADE, related_name="services")
     service_type = models.ForeignKey(ServiceTypeModel, on_delete=models.CASCADE, related_name="services")
 
