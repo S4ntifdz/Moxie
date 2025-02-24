@@ -1,6 +1,6 @@
 import uuid
 from django.db import models
-from service_management.models import ServiceModel
+from service_management.models.service_model import ServiceModel
 from medspas.models import MedspaModel
 
 class AppointmentStatus(models.TextChoices):
